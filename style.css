@@ -1,0 +1,36 @@
+.content{
+	background-color: #333333;
+	width: 666px;
+	padding: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	color: #333333;
+	opacity: 0.9;
+}
+table{
+	table-layout: fixed;
+	font-size: 20px;
+	width: 100%;
+}
+thead{
+	float: left;
+	display: table;
+	width: 50%;
+}
+tbody{
+	display: table;
+	width: 50%;
+	
+}
+@media screen and (max-width: 900px){
+thead{
+	float: left;
+	display: block;
+	width:100%
+}
+tbody{
+	width: 100%;
+}
+}
