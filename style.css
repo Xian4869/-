@@ -27,10 +27,14 @@ tbody{
 @media screen and (max-width: 900px){
 thead{
 	float: left;
-	display: block;
-	width:100%
+	width:100%;
 }
 tbody{
 	width: 100%;
 }
+}
+
+img{
+	width: 100px;
+	height:100px;
 }
