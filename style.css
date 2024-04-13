@@ -1,7 +1,7 @@
 .content{
 	background-color: #333333;
-	width: 666px;
-	padding: 100px;
+	width: auto;
+	padding: 30px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -32,9 +32,4 @@ thead{
 tbody{
 	width: 100%;
 }
-}
-
-img{
-	width: 100px;
-	height:100px;
 }
