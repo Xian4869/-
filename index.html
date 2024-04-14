@@ -7,17 +7,45 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <link id="icon" rel="shortcut icon" href="logo.jpeg">
 </head>
+<script>
+   window.onload = function(){
+      var audio = document.getElementById('music');
+         audio.pause();
+   }
+   function play(){
+      var audio = document.getElementById('music');
+      if (audio.paused){
+         audio.play();
+         document.getElementById('musicImg').src="绝区零.png";
+      }
+      else{
+         audio.pause();
+         audio.curruntTime = 0;
+         document.getElementById('musicImg').src="绝区零.png"
+      }
+   }
+</script>
 <body>
    <div class="content">
          <table>
             <thead>
-               <th>
-                  <li>
-                     <a href="https://xian4869.github.io/Genshin-Impact/index.html">
-                        <img src="原神.jpeg">
-                     </a>
-                  </li>
-               </th>
+               <tr>
+                  <th>
+                     <li>
+                        <a href="https://xian4869.github.io/Genshin-Impact/index.html">
+                           <img src="原神.jpeg">
+                        </a>
+                     </li>
+                  </th>
+               </tr>
+               <tr>
+                  <th>
+                     <li>
+                        <audio id="music" src="videoplayback.m4a" loop autoplay></audio>
+                        <img src="绝区零.png" onclick="play()">
+                     </li>
+                  </th>
+               </tr>
             </thead>
             <tbody>
                <th>
